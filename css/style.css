@@ -14,7 +14,7 @@ body {
 
 .skills {
     color: rgb(159, 127, 255);
-    
+
 }
 
 .skills-align {
@@ -36,31 +36,35 @@ body {
     padding-right: 5;
     padding-top: 5;
     padding-bottom:5; */
-    
-     width: 100px;
-     height: 100px;
-    box-sizing: content-box;
-     font-size: 5;
+
+
 }
 
 
-body {
-    background-image: url(../anime-minimalizm-kot-koty-dva.jpg);
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    height: 100%;
-    
-}
+
+
 .a-image {
     background-image: url(../anime-minimalizm-kot-koty-dva.jpg);
-    
+
     background-repeat: no-repeat;
     background-position: center;
-    
+
     height: 100%;
 }
-.box2{
+
+.box2 {
     margin: 10px;
+}
+
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
