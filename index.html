@@ -1,63 +1,71 @@
 <<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-</head>
+    <html lang="en">
 
-<body  >
-    <div class="container  ">
-        <div class="profile-header">
-            <img src="profile-pic.jpg" alt="Profile Picture">
-            <h1>hello thee</h1>
-            <p>workshop 3</p>
-            <p align="center">
-                <hr size="20" color="tomato">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <script>
+        function hello(text) {
+            alert('Hello' + text)
+        }
 
-                
-                Get more done with simplified project management
-                             Buildern offers comprehensive project management software
-                          that takes the weight off your shoulders. 
-                 <hr>
-            </p>
-        </div>
-        
-        <div class=" skills skills-align box " >
-            <h2>Skills</h2>
-            <ol class=" box2">
-                <li>HTML & CSS</li>
-                <hr>
-                <li>JavaScript</li>
-                <hr size="1" color="tomato">
-                <li>Python</li>
-                <hr size="1" color="tomato">
-                <li>Web Development</li>
-            </ol>
-        </div>
-        <div class=" skills skills-align box " >
-            <h2>Skills</h2>
-            <ol class=" box2">
-                <li>HTML & CSS</li>
-                <hr>
-                <li>JavaScript</li>
-                <hr size="1" color="tomato">
-                <li>Python</li>
-                <hr size="1" color="tomato">
-                <li>Web Development</li>
-            </ol>
-        </div>
-        
-        <div class="contact skills-align">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-        </div>
-    <div>
 
-    </div>
-    </div>
-</body>
-</html>
+    </script>
+
+    <body>
+        <div class="container a-image ">
+            <div class="profile-header">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <h1>hello thee</h1>
+                <p>workshop 3</p>
+
+                <button onclick="hello('สวัสดีครับ')">
+                    Click me1!
+                </button>
+                <p align="center">
+                    <hr size="" color="tomato">
+
+
+                    Get more done with simplified project management
+                    Buildern offers comprehensive project management software
+                    that takes the weight off your shoulders.
+                    <hr>
+                </p>
+            </div>
+
+            <div class=" skills skills-align box ">
+                <h2> Skills <button class="button" onclick="hello('คุณเก่งเรื่องอะไรครับ')">
+                        กดเลย!
+                    </button> </h2>
+                <button onclick="hello('คุณเก่งเรื่องอะไรครับ')">
+                    กดเลย!
+                </button>
+                <ol class=" box2">
+                    <li>HTML & CSS</li>
+                    <hr>
+                    <li>JavaScript</li>
+                    <hr size="1" color="tomato">
+                    <li>Python</li>
+                    <hr size="1" color="tomato">
+                    <li>Web Development</li>
+                </ol>
+            </div>
+
+
+            <div class="contact skills-align">
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile"
+                        target="_blank">linkedin.com/in/yourprofile</a></p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </body>
+
+    </html>
