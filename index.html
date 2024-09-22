@@ -11,6 +11,25 @@
         function hello(text) {
             alert('Hello' + text)
         }
+        function showMyName() {
+            document.getElementById("demo").innerHTML = "My Name is: <b>Komphet Meesab</b>";
+        }
+        function b1() {
+            hello();
+            showMyName();
+        }
+        let ishow = false;
+        function togglename() {
+            if (ishow) {
+                document.getElementById("demo").innerHTML = " ";
+                ishow = false
+            }
+            else {
+                document.getElementById("demo").innerHTML = "My Name is: <b>Komphet Meesab</b>";
+                ishow = true
+            }
+        }
+
 
 
     </script>
@@ -20,9 +39,9 @@
             <div class="profile-header">
                 <img src="profile-pic.jpg" alt="Profile Picture">
                 <h1>hello thee</h1>
-                <p>workshop 3</p>
+                <p id="demo" class="">workshop 3</p>
 
-                <button onclick="hello('สวัสดีครับ')">
+                <button onclick="togglename()">
                     Click me1!
                 </button>
                 <p align="center">
