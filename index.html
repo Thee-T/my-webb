@@ -32,6 +32,31 @@
 
 
 
+        const mySkills = ["HTML", "CSS", "Javascript", "Management", "Understanding"]
+        function generateMySkillInHTML() {
+            let htmlString = '<ol class=" box2">'
+            for (const skill of mySkills) {
+                htmlString += `<li>${skill}</li>`,
+                htmlString += "<hr>"
+            }
+
+            htmlString += "</ol>"
+
+            return htmlString;
+        }
+        let isShowMySkill = false;
+
+        function toggleMySkills() {
+            if (isShowMySkill) {
+                document.getElementById("mySkills").innerHTML = "";
+                isShowMySkill = false
+            }
+            else {
+                document.getElementById("mySkills").innerHTML = generateMySkillInHTML();
+                isShowMySkill = true
+            }
+        }
+
     </script>
 
     <body>
@@ -59,10 +84,13 @@
                 <h2> Skills <button class="button" onclick="hello('คุณเก่งเรื่องอะไรครับ')">
                         กดเลย!
                     </button> </h2>
-                <button onclick="hello('คุณเก่งเรื่องอะไรครับ')">
+                <button onclick="toggleMySkills()">
                     กดเลย!
                 </button>
-                <ol class=" box2">
+                <div id="mySkills">
+                    
+                </div>
+                <!-- <ol   class=" box2">
                     <li>HTML & CSS</li>
                     <hr>
                     <li>JavaScript</li>
@@ -70,7 +98,7 @@
                     <li>Python</li>
                     <hr size="1" color="tomato">
                     <li>Web Development</li>
-                </ol>
+                </ol> -->
             </div>
 
 
